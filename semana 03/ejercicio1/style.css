@@ -1,0 +1,114 @@
+body {
+  margin: 10px;
+  padding: 0px;
+}
+
+header {
+  padding: 50px;
+  background-color: blue;
+  text-align: center;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-family: "Caveat", cursive;
+  border-radius: 20px;
+}
+
+.row {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+aside {
+  padding: 20px;
+  /* flex: 10%; */
+  background-color: greenyellow;
+  text-align: center;
+  color: red;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+  border-radius: 20px;
+
+  
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  
+}
+
+section {
+  padding: 20px;
+  /* flex: 80%; */
+  background-color: skyblue;
+  height: 400px;
+  text-align: center;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Rubik Iso", cursive;
+  border-radius: 20px;
+}
+
+.aside2 {
+  
+  display: flex;
+  padding: 20px;
+  /* flex: 10%; */
+  background-color: rgb(21, 146, 195);
+  text-align: center;
+
+  flex-direction: column;
+  justify-content: center;
+
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Slab", serif;
+  border-radius: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  aside {
+    flex: 10%;
+  }
+
+  section {
+    flex: 80%;
+  }
+
+  .aside2 {
+    flex: 10%;
+  }
+}

@@ -1,0 +1,164 @@
+/* Estilos generales para el cuerpo y la cuadrícula */
+body {
+  margin: 10px;
+  padding: 0;
+  font-size: 2em;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenedor ocupe la altura completa de la ventana */
+}
+
+/* Estilos para el encabezado */
+.encabezado {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-family: "Caveat", cursive;
+  border-radius: 20px;
+
+  display: grid;
+  align-content: center
+
+}
+
+/* Estilos para el menú */
+.menu {
+  font-family: "Oswald", sans-serif;
+  background-color: green;
+  padding: 20px;
+  color: red;
+
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+  border-radius: 20px;
+  display: grid;
+  align-content: center
+}
+
+/* Estilos para el contenido principal */
+.principal {
+  background-color: skyblue;
+  padding: 20px;
+
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Rubik Iso", cursive;
+  border-radius: 20px;
+
+  display: grid;
+  align-content: center;
+}
+
+/* Estilos para la barra lateral */
+.lateral {
+  background-color: rgb(18, 148, 199);
+  padding: 20px;
+
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Slab", serif;
+  border-radius: 20px;
+
+  display: grid;
+  align-content: center
+}
+
+/* Estilos para el pie de página */
+.pie {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 20px;
+
+  text-align: center;
+  font-family: "Caveat", cursive;
+  border-radius: 20px;
+  display: grid;
+  align-content: center
+}
+
+/* Media query para pantallas más pequeñas que 600px */
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column; /* Cambiar a dirección de columna */
+  }
+
+  .container > div {
+    width: 100%; /* Ocupar el 100% del ancho de la pantalla */
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: repeat(4, 200px);
+  grid-template-areas:
+    "one one one"
+    "two three four"
+    "two three four"
+    "five five five";
+}
+
+.encabezado {
+  grid-area: one;
+}
+
+.menu {
+
+  grid-area: two;
+}
+
+.principal {
+
+  grid-area: three;
+  
+
+}
+
+.lateral {
+  grid-area: four;
+}
+
+.pie {
+  grid-area: five;
+}
+
+/* Media query para pantallas más pequeñas que 600px */
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    grid-template-rows: auto; /* Altura automática */
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five";
+  }
+
+
+  .principal{
+    height: 300px;
+  }
+}

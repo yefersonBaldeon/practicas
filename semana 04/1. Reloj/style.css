@@ -1,0 +1,21 @@
+
+h1{
+    margin: 30px;
+    text-align: center;
+    color: blue;
+}
+
+*{margin: 0px;
+padding: 0px;}
+
+canvas {
+    /* border: 1px solid black; */
+}
+
+div{
+    margin: 100px auto;
+    width: 402px;
+    height: 402px;
+
+
+}
